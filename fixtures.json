@@ -1,0 +1,41 @@
+[
+    {
+        "doctype": "Custom Field",
+        "filters": [["name", "in", [
+            "Job Card-job_status",
+            "Job Card-machine_code",
+            "Work Order-machining_notes",
+            "Work Order-finished_part",
+            "Work Order-uploaded_documents",
+            "Work Order-part_print",
+            "Work Order-material_certificates",
+            "Work Order-finish_certificates",
+            "Work Order-passivation_certificates",
+            "Job Card-traceability_requirements",
+            "Work Order-inspection_report",
+            "Work Order-job_number",
+            "Work Order-barcode",
+            "Work Order-current_employee",
+            "Work Order-current_status",
+            "Work Order-quote_number",
+            "Work Order-estimated_cost",
+            "Work Order-actual_cost",
+            "Work Order-scheduled_start_time",
+            "Work Order-scheduled_end_time",
+            "Work Order-tooling_requirements",
+            "Work Order-non_conformance_report"
+        ]]]
+    },
+    {
+        "doctype": "Property Setter",
+        "filters": [["doc_type", "in", [
+            "Work Order", "Job Card", "Part", "Customer"
+        ]]]
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [["dt", "in", [
+            "Work Order", "Job Card", "Part", "Customer"
+        ]]]
+    }
+]
