@@ -1,0 +1,4 @@
+include README.md
+recursive-include erpnext_machine_shop *.py
+recursive-include erpnext_machine_shop/public *
+recursive-include erpnext_machine_shop/config *
